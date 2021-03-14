@@ -3,49 +3,46 @@
    <head>
       <meta charset="utf-8">
       <title>HTML Academy: Нёрдс</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/styles.css">
       <link rel="icon" href="img/favicon.ico"/>
       <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
    </head>
    <body>
-      <header>
-         <a href="index.html"><img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="На главную"></a>
-         <nav>
-            <ul>
-               <li><a href="">СТУДИЯ
-                  </a>
-               </li>
-               <li>
-                  <a href="">КЛИЕНТЫ
-                  </a>
-               </li>
-               <li>
-                  <a href="catalog.html">МАГАЗИН
-                  </a>
-               </li>
-               <li>
-                  <a href="">КОНТАКТЫ
-                  </a>
-               </li>
-            </ul>
-         </nav>
-         <a href="">КОРЗИНА</a>
+      <header class="main-header">
+         <a href="index.html" class="main-logo"><img src="img/nerds-logo.svg" width="159" height="65" alt="На главную"></a>
+         <div class="nav-header">
+           <nav>
+             <ul>
+               <label><li><a href=""><button type="button">СТУДИЯ</button></a></li></label>
+               <label><li><a href=""><button type="button">КЛИЕНТЫ</button></a></li></label>
+               <label><li><a href="catalog.html"><button type="button">МАГАЗИН</button></a></li></label>
+               <label><li><a href=""><button type="button">КОНТАКТЫ</button></a></li></label>
+             </ul>
+            </nav>
+          </div>
+         <div class="cart">
+           <label>
+             <a href=""><img src="img/cart.png" width="15" height="11" alt=""><button type="button">КОРЗИНА</button></a>
+            </label>
+          </div>
       </header>
-   <main>
-      <section>
-      <img src="img/Index/nerds-index-slide1 1.png" width="760" height="431" alt="">
-      <h1>Долго, дорого, 
-         скурпулёзно.
-      </h1>
-      <p>Математически выверенный дизайн 
-         для вашего сайта или мобильного приложения.
-      </p>
-      <button type="button">УЗНАТЬ БОЛЬШЕ</button>
+   <main class="main-style">
+      <section class="top-section">
+        <img src="img/Index/nerds-index-slide1.png" width="760" height="431" alt="">
+        <h1 class="h1">Долго, дорого,
+          скурпулёзно.
+        </h1>
+        <p>Математически выверенный дизайн
+          для вашего сайта или мобильного приложения.
+        </p>
+        <button class="main-btn" type="button">УЗНАТЬ БОЛЬШЕ</button>
       </section>
       <div>
          <ul>
-            <li><img src="img/Index/Illustrations/illustration-1 1.jpg" width="300" height="146" alt=""></li>
-            <li><img src="img/Index/Illustrations/illustration-2 1.jpg" width="300" height="146" alt=""></li>
-            <li><img src="img/Index/Illustrations/illustration-3 1.jpg" width="300" height="146" alt=""></li>
+            <li><img src="img/Index/Illustrations/illustration-1.jpg" width="300" height="146" alt=""></li>
+            <li><img src="img/Index/Illustrations/illustration-2.jpg" width="300" height="146" alt=""></li>
+            <li><img src="img/Index/Illustrations/illustration-3.jpg" width="300" height="146" alt=""></li>
          </ul>
          <ul>
             <li><input type="radio" name="puka"></li>
@@ -53,36 +50,33 @@
             <li><input type="radio" name="puka"></li>
          </ul>
       </div>
-      <section>
+      <section class="mid-section">
          <ul>
             <li>
-               <h2>ВЕБ-САЙТЫ</h2>
-                
-               <p>Мир никогда не будет прежним 
-               после того как увидит Ваш сайт!</p>p>
-               <button type="button">ЗАКАЗАТЬ</button>
+               <h2 class="h2-features">ВЕБ-САЙТЫ</h2>
+                <p>Мир никогда не будет прежним
+                после того как увидит Ваш сайт!</p>
+               <button class="mid-btn mid-btn-1" type="button">ЗАКАЗАТЬ</button>
             </li>
             <li>
-               <h2>ПРИЛОЖЕНИЯ</h2>
-                
-               <p>Покорите топ-10 приложений 
-               в AppleStore и GooglePlay</p>p>
-               <button type="button">ЗАКАЗАТЬ</button>
+               <h2 class="h2-features">ПРИЛОЖЕНИЯ</h2>
+                <p>Покорите топ-10 приложений
+                 в AppleStore и GooglePlay</p>
+               <button class="mid-btn mid-btn-2" type="button">ЗАКАЗАТЬ</button>
             </li>
             <li>
-               <h2>ПРЕЗЕНТАЦИИ</h2>
-                
-               Вы даже не подозреваете 
-               насколько Вы изумительны!
-               <button type="button">ЗАКАЗАТЬ</button>
+               <h2 class="h2-features">ПРЕЗЕНТАЦИИ</h2>
+                <p>Вы даже не подозреваете
+                насколько Вы изумительны!</p>
+               <button class="mid-btn mid-btn-3" type="button">ЗАКАЗАТЬ</button>
             </li>
          </ul>
       </section>
-      <section>
-         <p><h3>Мы - маленькая, но гордая 
+      <section class="bottom-section">
+         <p><h3 class="h3-bottom-section">Мы - маленькая, но гордая
             студия из Краснодара.</h3>
          </p>
-         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
+         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.
          </p>
          <h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
@@ -93,42 +87,42 @@
          </ul>
       </section>
       <div>
-         <img src="img/Index/nerds-illustration 1.png" width="360" height="208" alt="">
+         <img src="img/Index/nerds-illustration1.png" width="360" height="208" alt="">
          <p><b>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</b></p>
          <dl>
-            <dt>Уровень самоотдачи</dt>
-            <dd>146%</dd>
-            <dt>Соблюдение сроков</dt>
-            <dd>100%</dd>
-            <dt>Минимальная предоплата</dt>
-            <dd>50%</dd>
+            <dt class="dt">Уровень самоотдачи</dt>
+            <dd class="dd">146%</dd>
+            <dt class="dt">Соблюдение сроков</dt>
+            <dd class="dd">100%</dd>
+            <dt class="dt">Минимальная предоплата</dt>
+            <dd class="dd">50%</dd>
          </dl>
       </div>
       <section>
-         <ul>
-            <li><a href=""><img src="img/Index/BottomLine/1.png" width="199" height="67.82" alt="HTML Academy"></a></li>
-            <li><a href=""><img src="img/Index/BottomLine/2.png" width="209" height="90" alt="Borodinski"></a></li>
-            <li><a href=""><img src="img/Index/BottomLine/3.png" width="185" height="52" alt="Pink"></a></li>
-            <li><a href=""><img src="img/Index/BottomLine/4.png" width="173" height="84" alt="Mishka"></a></li>
-         </ul>
+         <div class="bottom links"><ul>
+            <li><a class="bottom-links" href=""><img src="img/Index/BottomLine/1.png" width="199" height="67" alt="HTML Academy"></a></li>
+            <li><a class="bottom-links" href=""><img src="img/Index/BottomLine/2.png" width="209" height="90" alt="Borodinski"></a></li>
+            <li><a class="bottom-links" href=""><img src="img/Index/BottomLine/3.png" width="185" height="52" alt="Pink"></a></li>
+            <li><a class="bottom-links" href=""><img src="img/Index/BottomLine/4.png" width="173" height="84" alt="Mishka"></a></li>
+         </ul></div>
       </section>
    </main>
       <footer>
          <section>
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-            <button type="button">НАПИШИТЕ НАМ</button>
+            <h3 class="h3-contacts">NЁRDS DESIGN STUDIO</h3>
+            <p class="contacts">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 тел. <a href="tel:+7 (812) 275-75-75" class="tel-number">+7 (812) 275-75-75</a></p>
+            <button class="footer-btn" type="button">НАПИШИТЕ НАМ</button>
          </section>
-         <ul>
+         <ul class="social-nav">
             <!--Social media links-->
-            <li><a><img src="https://via.placeholder.com/81x81" width="81" height="81"></a></li>
+            <li><a href=""><div><img src="img/SMButtons/vk-icon.svg" width="26" height="15"><div><img src="img/SMButtons/base-shape.svg" width="81" height="81"></div></div></a></li>
             <!--VK-->
-            <li><a><img src="https://via.placeholder.com/81x81" width="81" height="81"></a></li>
+            <li><a href=""><img src="img/SMButtons/base-shape.svg" width="81" height="81"></a></li>
             <!--FB-->
-            <li><a><img src="https://via.placeholder.com/81x81" width="81" height="81"></a></li>
+            <li><a href=""><img src="img/SMButtons/base-shape.svg" width="81" height="81"></a></li>
             <!--INST-->
          </ul>
-         <strong>Давайте дружить, это выгодно!</strong>
+         <p class="footer-header"><strong>Давайте дружить, это выгодно!</strong></p>
          <p>Скидка 10% для друзей из социальных сетей.</p>
       </footer>
    </body>

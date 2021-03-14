@@ -3,91 +3,100 @@
    <head>
       <meta charset="utf-8">
       <title>HTML Academy: Нёрдс</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/styles.css">
       <link rel="icon" href="img/favicon.ico"/>
       <link rel="icon" href="img/favicon.svg" type="image/svg+xml"/>
    </head>
    <body>
-      <header>
-         <a href="index.html"><img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="На главную"></a>
-         <nav>
-            <ul>
-               <li><a href="">СТУДИЯ
-                  </a>
-               </li>
-               <li>
-                  <a href="">КЛИЕНТЫ
-                  </a>
-               </li>
-               <li>
-                  <a href="catalog.html">МАГАЗИН
-                  </a>
-               </li>
-               <li>
-                  <a href="">КОНТАКТЫ
-                  </a>
-               </li>
-            </ul>
+    <header class="main-header">
+      <a href="index.html" class="main-logo"><img src="img/nerds-logo.svg" width="159" height="65" alt="На главную"></a>
+      <div class="nav-header">
+        <nav>
+          <ul>
+            <label><li><a href=""><button type="button">СТУДИЯ</button></a></li></label>
+            <label><li><a href=""><button type="button">КЛИЕНТЫ</button></a></li></label>
+            <label><li><a href="catalog.html"><button type="button">МАГАЗИН</button></a></li></label>
+            <label><li><a href=""><button type="button">КОНТАКТЫ</button></a></li></label>
+          </ul>
          </nav>
-         <a href="">КОРЗИНА</a>
-      </header>
+       </div>
+      <div class="cart">
+        <label>
+          <a href=""><img src="img/cart.png" width="15" height="11" alt=""><button type="button">КОРЗИНА</button></a>
+         </label>
+       </div>
+   </header>
       <main>
          <section>
-            <h1>Магазин готовых шаблонов</h1>
+            <h1 class="h1-top-section">Магазин готовых шаблонов</h1>
          </section>
-         <section>
+         <section class="net-text">
             <form action="" method="get">
-               <h2>СЕТКА:</h2>
+               <h2 class="h2-catalog">СЕТКА:</h2>
                 <label for="na"><input type="radio" name="net" value="adaptive" id="na">Адаптивная</label>
                 <label for="nf"><input type="radio" name="net" value="fixed" id="nf">Фиксированная</label>
-                <label for="nr"><input type="radio" name="net" value="rubber" id="nr">Резиновая</label>    
+                <label for="nr"><input type="radio" name="net" value="rubber" id="nr">Резиновая</label>
          </section>
-         <section>
-            <h2>ОСОБЕННОСТИ:</h2>
+         <section class="features-text">
+            <h2 class="h2-catalog">ОСОБЕННОСТИ:</h2>
             <label><input type="checkbox" name="features" value="slider" checked>Слайдер</label>
             <label><input type="checkbox" name="features" value="advantages">Блок преимущств</label>
             <label><input type="checkbox" name="features" value="news" checked>Новости</label>
             <label><input type="checkbox" name="features" value="gallery">Галерея</label>
             <label><input type="checkbox" name="features" value="cart">Корзина</label>
-            <input type="submit" value="ПОКАЗАТЬ">
+            <label><input class="btn-catalog" type="submit" value="ПОКАЗАТЬ"></label>
          </form>
          </section>
+         <div class="pricing pricing-text">
+           <h2 class="h2-catalog">СТОИМОСТЬ:</h2>
+         </div>
          <section>
-            <h3>СОРТИРОВАТЬ:</h3>
-             <ul>
-                 <li><a href=""><img src="img/Catalog/Mask Group.jpg" width="358" height="578" alt="sedona"></a></li>
-                 <li><a href=""><img src="img/Catalog/Mask Group2.jpg" width="358" height="578" alt="pink"></a></li>
-                 <li><a href=""><img src="img/Catalog/Mask Group3.jpg" width="358" height="578" alt="borodinski"></a></li>
-                 <li><a href=""><img src="img/Catalog/Mask Group4.jpg" width="358" height="578" alt="mishka"></a></li>
-                 <li><a href=""><img src="img/Catalog/Mask Group5.jpg" width="358" height="578" alt="A+"></a></li>
-                 <li><a href=""><img src="img/Catalog/Mask Group6.jpg" width="358" height="578" alt="kvast"></a></li>
-             </ul>
+            <h2 class="h2-catalog">СОРТИРОВАТЬ:</h2>
+            <div class="main-sort">
+              <ul>
+                <li>ПО ЦЕНЕ</li>
+                <li>ПО ТИПУ</li>
+                <li>ПО НАЗВАНИЮ</li>
+              </ul>
+            </div>
+               <div class="catalog-list">
+                 <ul>
+                    <li><a href=""><img src="img/Catalog/Mask_Group.jpg" width="358" height="578" alt="sedona"></a></li>
+                    <li><a href=""><img src="img/Catalog/Mask_Group2.jpg" width="358" height="578" alt="pink"></a></li>
+                    <li><a href=""><img src="img/Catalog/Mask_Group3.jpg" width="358" height="578" alt="borodinski"></a></li>
+                    <li><a href=""><img src="img/Catalog/Mask_Group4.jpg" width="358" height="578" alt="mishka"></a></li>
+                    <li><a href=""><img src="img/Catalog/Mask_Group5.jpg" width="358" height="578" alt="A+"></a></li>
+                    <li><a href=""><img src="img/Catalog/Mask_Group6.jpg" width="358" height="578" alt="kvast"></a></li>
+               </ul>
+              </div>
          </section>
          <nav>
-             <ul>
-                 <li><a title="Так выж на первой странице!" href="#">1</a></li>
-                 <li><a href="#">2</a></li>
-                 <li><a href="#">3</a></li>
-                 <li><a href="#">СЛЕДУЮЩАЯ</a></li>
-             </ul>
+             <div class="page-nav"><ul>
+                 <label><li><a title="Так выж на первой странице!" href="#"><button type="button" class="page-1">1</a></button></li></label>
+                 <label><li><a href="#"><button type="button" class="page-2">2</button></a></li></label>
+                 <label><li><a href="#"><button type="button" class="page-3">3</button></a></li></label>
+                 <label><li><a href="#"><button type="button" class="next-page">СЛЕДУЮЩАЯ</button></a></li></label>
+             </ul></div>
          </nav>
       </main>
       <footer>
-         <section>
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
-            <button type="button">НАПИШИТЕ НАМ</button>
-         </section>
-         <ul>
-            <!--Social media links-->
-            <li><a><img src="https://via.placeholder.com/81x81" width="81" height="81"></a></li>
-            <!--VK-->
-            <li><a><img src="https://via.placeholder.com/81x81" width="81" height="81"></a></li>
-            <!--FB-->
-            <li><a><img src="https://via.placeholder.com/81x81" width="81" height="81"></a></li>
-            <!--INST-->
-         </ul>
-         <strong>Давайте дружить, это выгодно!</strong>
-         <p>Скидка 10% для друзей из социальных сетей.</p>
-      </footer>
+        <section>
+           <h3 class="h3-contacts">NЁRDS DESIGN STUDIO</h3>
+           <p class="contacts">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 тел. <a href="tel:+7 (812) 275-75-75" class="tel-number">+7 (812) 275-75-75</a></p>
+           <button class="footer-btn" type="button">НАПИШИТЕ НАМ</button>
+        </section>
+        <ul class="social-nav">
+           <!--Social media links-->
+           <li><a href=""><div><img src="img/SMButtons/vk-icon.svg" width="26" height="15"><div><img src="img/SMButtons/base-shape.svg" width="81" height="81"></div></div></a></li>
+           <!--VK-->
+           <li><a href=""><img src="img/SMButtons/base-shape.svg" width="81" height="81"></a></li>
+           <!--FB-->
+           <li><a href=""><img src="img/SMButtons/base-shape.svg" width="81" height="81"></a></li>
+           <!--INST-->
+        </ul>
+        <p class="footer-header"><strong>Давайте дружить, это выгодно!</strong></p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+     </footer>
    </body>
 </html>
